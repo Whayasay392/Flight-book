@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight book</title>
+    
+    <link rel="stylesheet" href=" https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/74091f2b8e.js"></script>
+    <script>
+        function myTime() {
+            let today = new Date();
+            let h = today.getHours();
+            let m = today.getMinutes();
+            m = checkTime(m);
+            document.querySelector('a').innerHTML= h + ":" + m;
+            let t = setTimeout(myTime, 500);
+        }
+        function checkTime(i) {
+            if (i<10) {i="0"+i};
+            return i;
+        }
+    </script>
+</head>
+<body onload="myTime()">
+    <section class="container">
+        <div class="box-1">
+            <img id="img1" src="airplane.png" alt="log">
+            <h1>Love at <br> First Flight</h1>
+            <div id="flight-place">
+                <h6><i class="fas fa-plane-departure"></i>From</h6>
+                <h4>Dhaka, Bangladesh</h4>
+            </div>
+            <div id="flight-place">
+                <h6><i class="fas fa-plane-arrival"></i>To</h6>
+                <h4>Changi, Singapore</h4>
+            </div>
+           <button id="round-button"><i style="color: rgb(73, 67, 67);" id="next-arrow" class="fas fa-angle-right"></i><i id="next-arrow" class="fas fa-angle-right"></i><br> Go</button>
+        </div>
+        <div class="box-2">
+            <nav id="top">
+                <a>9:41</a>
+                <div class="top-icons">
+                    <i class="fas fa-signal"></i>
+                    <i class="fas fa-wifi"></i>
+                    <i class="fas fa-battery-full"></i>
+
+                </div>
+                   
+            </nav>
+            <br>
+            
+            <div class="plane-wrap">
+                <div class="plane-icons">
+                    <i id="departure" class="fas fa-plane-departure"></i><br>
+                    <i id="arrival" class="fas fa-plane-arrival"></i><br>
+                </div>
+                <div class="flight details">
+                    <h3 style="margin-left: -17px
+                    ; float: left; margin-top: -1px;">DHK</h3>
+                    <h3 style="margin-left: 193px
+                    ; margin-top: -11px;">SIN</h3>
+                   
+                </div>
+                <div class="destination-name">
+                    <p class="fade" style="margin-left: -15px
+                    ; float: left; margin-top: -1px; font-size: 0.6rem; color: darkgray; font-weight: bold;">Dhaka, Bangladesh</p>
+                    <p class="fade" style="margin-left: 56px
+                    ; font-size: 0.6rem; color: darkgray; font-weight: bold;">Changi, Singapore</p>
+            </div><br>
+            </div>
+            <div id="btn">
+                <h2>Flight details</h2>
+                <div id="round">
+                
+                    <img id="round-trip" style="width: 15px; margin:5px; margin-top: 12px;" src="https://res.cloudinary.com/dvhndpbun/image/upload/v1589305250/sync-icon_uulbqt.svg" alt=""><p id="trip">Round Trip</p>
+                <div class="tog">
+                    <div class="toggle-btn" onclick="this.classList.toggle('active')">
+                    <div class="inner-circle"></div>
+                </div>
+                </div>
+                
+                </div><br>
+               
+                
+                    <img style="width: 15px; " id="border-plane" style="margin-top: 5px;" src="https://res.cloudinary.com/dvhndpbun/image/upload/v1589305252/calender-plane-right_akxn2w.svg" alt=""><p id="flight-details-sub" style="margin-top: 10px
+                    ;">26 March 2020, 19:45</p><i id="circle-icon" class="fas fa-circle"></i>
+                <h5>DEPARTURE</h5><br>
+                <div class="left-dot">
+
+                </div>
+        
+               <img id="border-plane" style="width: 15px; " src="https://res.cloudinary.com/dvhndpbun/image/upload/v1589305253/calender-plane-left_rzh2iy.svg" alt=""><p id="flight-details-sub">30 March 2020, 13:30</p><i id="circle-icon" class="fas fa-circle"></i>
+                <h5>RETURN</h5>
+                
+                    <img id="chair" style="width: 15px; " src="https://res.cloudinary.com/dvhndpbun/image/upload/v1589305251/chair_gtqr97.svg" alt=""><p id="flight-details-sub">Business</p><i id="circle-icon" class="fas fa-circle"></i>
+                <h5>CLASS</h5>
+                <div class="sign-curve">
+                <img style="width: 15px; " id="user" src="https://res.cloudinary.com/dvhndpbun/image/upload/v1589305250/user-profile_jebsps.svg" alt="">
+                <p id="flight-details-sub" style="margin-right: -15px;">2 Persons</p>
+                <h5>PASSENGER</h5>
+                </div>
+                    <div class="sign">
+                    <p class="minus">-</p>
+                    <p class="plus">+</p>
+                    </div>
+            </div>
+           <button id="round-button2"><i style="color: rgb(73, 67, 67);" id="next-arrow" class="fas fa-angle-right"></i><i id="next-arrow" class="fas fa-angle-right"></i><br> Next</button>
+        </div>
+    </section>
+    
+</body>
+</html>

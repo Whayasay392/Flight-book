@@ -1,0 +1,324 @@
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body    {
+    background: darkgray;
+}
+.container  {
+    display: flex;
+    justify-content: space-around;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 10% auto;
+}
+.box-1  {
+    height: 39rem;
+    max-height: 39rem;
+    flex-basis: 21%;
+    max-width: 21%;
+    background: rgb(223, 219, 219);
+    margin-left: 25%;
+    border-radius: 20px;
+}
+.box-2  {
+    height: 39rem;
+    max-height: 39rem;
+    flex-basis: 21%;
+    background: rgb(223, 219, 219);
+    margin-right: 25%;
+    border-radius: 20px;
+}
+#img1   {
+    height: 230px;
+    width: 360px;
+    margin: 10% 2%;
+    margin-bottom: 10px;
+}
+h1  {
+    margin: 5px;
+    margin-left: 15px;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+#flight-place  {
+    background: white;
+    box-shadow: darkgrey;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    width: 90%;
+}h6 {
+    color: darkgrey;
+    font-size: 0.6rem;
+
+}
+h5  {
+    color: darkgrey;
+    font-size: 0.6rem;
+    margin-left: 28px;
+    margin-top: 5px;
+}
+i   {
+    color: black;
+    margin: 9px;
+}
+#next-arrow {
+    color: blanchedalmond;
+    margin: 0.1px;
+}
+h4 {
+    font-size: 1rem;
+}
+#round-button   {
+    background: black;
+    color: white;
+    border-radius: 50%;
+    box-shadow: none;
+    
+    padding: 10px;
+    margin-left: 35%;
+    margin-top: 0;
+    width: 5rem;
+    height: 5rem;
+}
+#round-button2   {
+    background: black;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 33%;
+    margin-top: 10px;
+    width: 5rem;
+    height: 5rem;
+}
+nav {
+    margin: 10px;
+    display: flex;
+}
+a   {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    font-weight: bold; 
+}
+.top-icons  {
+    float: right;
+    margin-left: 220px;
+}
+nav .top-icons i {
+    font-size: 0.7rem;
+    margin: 1px;
+    
+} 
+.plane-wrap {
+    display: block;
+    border-top: 2px dashed black;
+    border-radius: 57%;
+    width: 210px;
+    height: 110px;
+    margin-left: 60px;
+    margin-top: 20px;
+    
+}
+.plane-icons    {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 31px;
+}
+ #departure   {
+    margin-left: -50px;
+}
+ #arrival   {
+    margin-left: 197px;
+}
+.flight-details {
+    display: flex;
+}
+.destination-name   {
+    display: flex;
+}
+#btn    {
+    background: white;
+    border-radius: 15px;
+    padding: 8px;
+    margin: 5px;
+    margin-left: 20px;
+    margin-top: 25px;
+    max-width: 90%;
+    height: 19rem;
+    line-height: 8px;
+}
+h2  {
+    margin: 20px 0;
+    font-weight: bold;
+}
+#round  {
+    width: 95%;
+    margin-right: 5px;
+    padding: 5px;
+    background: rgb(223, 219, 219);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    margin-right: 5px;
+    margin-bottom: 1px;
+    margin-top: 5px;
+}
+.tog    {
+    float: right;
+    margin-top: 6px;
+    margin-left: 110px;
+}
+.toggle-btn {
+    width: 40px;
+    height: 25px;
+    background: black;
+    border-radius: 20px;
+    padding: 3px;
+    transition: all 300ms ease-in-out;
+}
+.toggle-btn > .inner-circle {
+    width: 20px;
+    height: 18px;
+    background:white;
+    border-radius: 50%;
+    
+}
+.toggle-btn.active {
+    background:black;
+   
+}
+.toggle-btn.active > .inner-circle {
+    margin-left: 20px;
+}
+.left-dot   {
+    
+    border-left: 2px dashed black;
+    width: 95%;
+    height: 30px;
+    
+    margin-top: -16px;
+    margin-bottom: -7px;
+    margin-left: 12px;
+}
+#flight-details-sub   {
+   font-weight: bold; 
+   font-size: 0.8rem;
+ 
+  margin-top: 15px; margin-bottom: 3px;
+  margin-left: 15px; margin-right: 5px;
+   line-height: 15px;
+}
+#trip    {
+   font-weight: bold; 
+   font-size: 0.8rem;
+   margin-top: 15px;
+   margin-left: 5px;
+   
+}
+.sec {
+    margin-top: 10px;
+    line-height: 6px;
+    margin-bottom: 5px;
+}
+#border-plane, #chair, #user   {
+   
+    float: left;
+    margin: 10px 5px;
+    margin-right: 10px;
+}
+#circle-icon  {
+    float: right;
+    margin-top: -15px;
+    margin-left: 1px;
+    font-size: 0.5rem;
+    color: rgb(223, 219, 219);;
+}
+.sign-curve   {
+    float: left;
+}
+.sign    {
+    width: 60px;
+    height: 25px;
+    background: rgb(223, 219, 219);
+    border-radius: 20px;
+    padding: 5px;
+    margin-left: 229px;
+   margin-top: 7%;
+}
+.minus  {
+    float: left;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.plus   {
+    float: right;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 760px)    {
+    
+    .container  {
+        display: inline-block;
+        margin-top: 5%;
+        
+    }
+    .box-1  {
+        height: 39rem;
+        width: 91%;
+        max-width: 91%;
+        margin-bottom: 35px;
+        margin-left: 18px;
+    }
+    .box-2  {
+        height: 39rem;
+        width: 91%;
+        max-width: 95%;
+        margin-left: 18px;
+        
+       }
+       
+nav {
+    margin: 10px;
+    margin-top: 15px;
+    display: flex;
+}
+.top-icons  {
+    
+    margin-left: 210px;
+}
+nav .top-icons i {
+    font-size: 0.7rem;
+    margin: 2px;
+    
+} 
+
+.to {
+   
+    margin-top: 10px;
+    
+}
+
+#btn    {
+    
+    margin-left: 15px;
+    
+}
+
+.tog    {
+    
+    margin-left: 90px;
+}
+
+#round-button   {
+   
+    
+    margin-top: 12px;
+   
+}
+    
+    }
